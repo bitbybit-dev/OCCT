@@ -107,3 +107,13 @@ else()
 endif()
 
 SEARCH_DRACO_LIB()
+
+# Add Draco library directory to the global link search path so that
+# the bare `-ldraco` produced by CSF_Draco can be resolved at link time.
+# Mirrors what other 3rd-party hooks (freetype/tcl/tbb/ffmpeg/jemalloc/vtk) do.
+if (3RDPARTY_DRACO_LIBRARY_DIR AND EXISTS "${3RDPARTY_DRACO_LIBRARY_DIR}")
+  list (APPEND 3RDPARTY_LIBRARY_DIRS "${3RDPARTY_DRACO_LIBRARY_DIR}")
+endif()
+if (WIN32 AND 3RDPARTY_DRACO_LIBRARY_DIR_DEBUG AND EXISTS "${3RDPARTY_DRACO_LIBRARY_DIR_DEBUG}")
+  list (APPEND 3RDPARTY_LIBRARY_DIRS_DEBUG "${3RDPARTY_DRACO_LIBRARY_DIR_DEBUG}")
+endif()

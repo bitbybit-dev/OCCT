@@ -124,3 +124,9 @@ cmake_install.cmake
 /.CONTINUE.md
 /.AIDER.md
 /.WINDSURF.md
+
+# Downstream overlay module list (untracked; placed by a consuming superproject). Generic name only -
+# the fork stays stock OCCT. Overlay/external module mounts (and any working snapshots) are excluded
+# locally via .git/info/exclude during setup, so no project-specific names leak into this tracked file.
+/src/MODULES.local.cmake
+/src/MODULES.extra.cmake
