@@ -108,6 +108,8 @@ endif()
 
 SEARCH_DRACO_LIB()
 
+# Modified by MB "Bit by bit developers" on 2026-06-05: the lines from here to the end of this file
+# were added to the file as Open CASCADE Technology distributes it. Nothing above was changed.
 # Add Draco library directory to the global link search path so that
 # the bare `-ldraco` produced by CSF_Draco can be resolved at link time.
 # Mirrors what other 3rd-party hooks (freetype/tcl/tbb/ffmpeg/jemalloc/vtk) do.

@@ -142,6 +142,8 @@ cmake_install.cmake
 /.AIDER.md
 /.WINDSURF.md
 
+# Modified by MB "Bit by bit developers" on 2026-06-05: the lines from here to the end of this file
+# were added to the file as Open CASCADE Technology distributes it. Nothing above was changed.
 # Downstream overlay module list (untracked; placed by a consuming superproject). Generic name only -
 # the fork stays stock OCCT. Overlay/external module mounts (and any working snapshots) are excluded
 # locally via .git/info/exclude during setup, so no project-specific names leak into this tracked file.
